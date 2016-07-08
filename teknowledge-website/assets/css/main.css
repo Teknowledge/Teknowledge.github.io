@@ -1439,6 +1439,33 @@
 				background-color: #1f232b;
 			}
 
+		input[type="button"].style4,
+		input[type="submit"].style4,
+		input[type="reset"].style4,
+		button.style4,
+		.button.style4 {
+			background: #e97770 url("images/overlay.png");
+			color: #fff;
+			font-size: 70%;
+		}
+
+			input[type="button"].style4:hover,
+			input[type="submit"].style4:hover,
+			input[type="reset"].style4:hover,
+			button.style4:hover,
+			.button.style4:hover {
+				background-color: #f98780;
+			}
+
+			input[type="button"].style4:active,
+			input[type="submit"].style4:active,
+			input[type="reset"].style4:active,
+			button.style4:active,
+			.button.style4:active {
+				background-color: #d96760;
+			}
+
+
 /* List */
 
 	ul.default {
