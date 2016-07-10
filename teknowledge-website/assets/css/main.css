@@ -1555,6 +1555,7 @@
 
 		.wrapper .title {
 			position: absolute;
+			background: #e97770 url("images/overlay.png");
 			top: 0;
 			left: 50%;
 			text-align: center;
