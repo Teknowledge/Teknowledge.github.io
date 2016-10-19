@@ -2025,7 +2025,7 @@
 			#logo {
 				position: absolute;
 				height: 5em;
-				top: 33%;
+				top: 20%;
 				left: 0;
 				width: 100%;
 				text-align: center;
@@ -2285,7 +2285,7 @@
 			}
 
 			.homepage #header {
-				padding: 12em 0;
+				padding: 1em 0;
 			}
 
 		/* Logo */
