@@ -90,3 +90,7 @@
 .box img {
   max-width: 200px;
 }
+
+#back-to-top:hover {
+  cursor: pointer;
+}
