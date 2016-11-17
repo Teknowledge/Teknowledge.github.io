@@ -1,0 +1,89 @@
+/* custom mobile css */
+@media screen and (max-width: 736px) {
+  body {
+    font-size: 0.7em;
+  }
+  #mission {
+    padding: 0em 4em;
+  }
+  #tek-vid {
+    width: 80%;
+    height: 100%;
+  }
+  .style3 .centered-text li {
+    margin: 0 5%;
+  }
+}
+
+
+/* custom desktop css */
+@media screen and (min-width: 737px) {
+  #mission {
+    padding: 0em 11em;
+  }
+  #tek-vid {
+    width: 530px;
+    height: 300px;
+  }
+  .style3 .centered-text li {
+    margin: 0 20%;
+  }
+  #social-row {
+    text-align: center;
+  }
+  .style3 .centered-text {
+    margin: 0 18%;
+  }
+}
+
+/* general css */
+
+#content {
+  margin: 0em 4em;
+}
+
+#program > div {
+  padding: 0em 4em;
+}
+
+.highlight img {
+  width: 90%;
+  max-width: 175px;
+}
+
+#footer p {
+  padding: 0em 4em;
+}
+
+#main h3 {
+  width: 100%;
+  font-size: 1.5em;
+}
+
+.curriculum-main section {
+  padding: 0em 3em;
+}
+
+#main.curriculum-main .row,
+#content .row {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#main.curriculum-main .no-pad {
+  padding: 0;
+}
+
+#main.curriculum-main .top-bot-pad {
+  padding: 2em 0;
+}
+
+.style3 .centered-text li {
+  list-style-type: circle;
+  text-align: left;
+}
+
+.box img {
+  max-width: 200px;
+}
