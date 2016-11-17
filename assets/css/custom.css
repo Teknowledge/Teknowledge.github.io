@@ -34,6 +34,9 @@
   .style3 .centered-text {
     margin: 0 18%;
   }
+  #content-bios {
+    margin: 0em 4em;
+  }
 }
 
 /* general css */
