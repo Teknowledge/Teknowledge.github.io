@@ -215,6 +215,12 @@ a:hover {
 	width: 100%;
 }
 
+.tek-vid {
+	width: 600px;
+  height: 338px;
+  border: white 1px solid;
+}
+
 .interested-section .section-item:first-child {
 	position: relative;
 	height: 1em;
