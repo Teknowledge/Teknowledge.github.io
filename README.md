@@ -1,2 +1,0 @@
-# TeknowledgeWebsite
-Teknowledge Website 
