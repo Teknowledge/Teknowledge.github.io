@@ -98,6 +98,7 @@ h3::first-letter {
 h4 {
 	font-family: 'Raleway-Medium', sans-serif;
 	margin-top: 0.5em;
+	text-align: center;
 }
 h4:first-child {
 	margin-top: 0;
