@@ -304,3 +304,10 @@ img.nav-bar-tk-logo {
 .curriculum-section img {
 	width: 100%;
 }
+
+/* OBAMA PAGE */
+
+.obama-curriculum-section a,
+.obama-curriculum-section p {
+	margin-bottom: 0.5em;
+}
