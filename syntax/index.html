@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teknowledge | Obama Program</title>
+  <link rel="stylesheet" href="/css/lib/reset.css">
+  <!-- https://fonts.google.com/specimen/Raleway?selection.family=Raleway -->
+  <link rel="stylesheet" href="/css/lib/fonts/Raleway.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="/img/black_tk_logo_small.png">
+  <!-- highlight.js for code highlighting -->
+  <link rel="stylesheet" href="/css/lib/highlight-default-9.12.0.min.css">
+  <script src="/js/lib/highlight-9.12.0.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- JS scripts at bottom -->
+</head>
+<body>
+
+  <div class="nav-bar top-nav-bar section-container">
+    <div class="section">
+      <a href="/" class="img-link"><img class="nav-bar-tk-logo" src="/img/tek_logo_transparent.png"><span class="tk-nav-bar-text">teknowledge</span></a>
+      <a href="/#about-us">About Us</a>
+      <a href="/programs">Programs</a>
+      <a href="/curriculum">Curriculum</a>
+    </div>
+  </div>
+
+  <h1>Syntax Guide</h1>
+
+  <div class="obama-curriculum-section section-container">
+    <div class="section">
+      <div class="section-item half-width">
+<code class="python">print</code>
+<p>Write to the screen</p>
+<pre><code class="python">print("hi")
+print("multiple", "things")
+print("numbers too", 42, -8)</code></pre>
+
+<br>
+
+<code class="python">variables</code>
+<p>store a piece of information</p>
+<pre><code class="python">x = 1
+print("x is", x)
+name = "Cody"
+print("hi " + name + "!")</code></pre>
+
+<br>
+
+<code class="python">input</code>
+<p>gets user input - <i>pauses</i> program until user presses ENTER, <i>returns</i> anything that they typed *as a string*</p>
+<pre><code class="python">name = input("Enter your name: ")
+print("Your name is", name)
+input("Press enter to continue...")
+</code></pre>
+
+<br>
+
+<code class="python">comment</code>
+<p>A way to comment anything you may want to remember / explain to other people. The things you write will in no way shape or form affect your code</p>
+<pre><code class="python"># checks for out of bounds
+# function still needs to be edited
+# print("something I don't want to actually print right now")</code></pre>
+
+<br>
+
+<code class="python">math operators</code>
+<p>python can do math!  things work mostly as you would expect</p>
+<pre><code class="python">x = 1 + 4 - 3
+y = 2*(5 + x)</code></pre>
+
+<br>
+
+<code class="python">if statement</code>
+<p>do this code <i>if</i> this <i>condition</i> is true</p>
+<pre><code class="python">print("what is 1 + 1?")
+answer = input("> ")
+if (answer == "2"):
+  print("right!")
+elif (answer == "two"):
+  print("clever!")
+else:
+  print("wrong!")</code></pre>
+
+<br>
+
+<code class="python">functions</code>
+<p>a defined group of code that can be called multiple times and optionally with arguments and with a return value</p>
+<pre><code class="python">def f():
+  print("I am in a function, f!")
+  print("multiple lines of code grouped together!")
+
+print("I am before the function call to f")
+f()
+print("I am after the function call to f")</code></pre>
+
+<br>
+
+<pre><code class="python">def gimmeWahoos(x):
+  print("I am in the function gimmeWahoos")
+  print("I recieved an argument:", x)
+  print("I am going to return the string 'wahoo' repeated x times")
+  return "wahoo" * x
+
+print("I am calling function gimmeWahoos")
+print("with an argument of the integer 5")
+returnValue = gimmeWahoos(5)
+print("gimmeWahoos returned to me the value:", returnValue)</code></pre>
+
+<br>
+
+<!-- 
+<code class="python">word</code>
+<p>description</p>
+<pre><code class="python">examples</code></pre>
+-->
+      </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+  	<a href="/obama"><- Back</a>
+  </div>
+
+</body>
+</html>

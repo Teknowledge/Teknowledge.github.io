@@ -117,6 +117,10 @@ a:hover {
 	cursor: pointer;
 }
 
+code {
+	font-family: monospace;
+}
+
 /* SECTIONS */
 
 .section-container {
