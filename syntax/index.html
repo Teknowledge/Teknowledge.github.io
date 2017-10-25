@@ -27,9 +27,20 @@
 
   <h1>Syntax Guide</h1>
 
-  <div class="obama-curriculum-section section-container">
+  <div class="syntax-guide-section section-container">
     <div class="section">
-      <div class="section-item half-width">
+      <div class="section-item eighty-percent-width">
+<a href="https://docs.google.com/document/d/1WShlUw59AmkNPsYvtAkbBWEN4OEqkYfQsMHqwyj-i_8/edit?usp=sharing" target="_blank">Google Doc version</a>
+
+<br>
+
+<a href="#basics" class="shortcut">Basics</a>
+<a href="#functions" class="shortcut">Functions</a>
+<a href="#loops" class="shortcut">Loops</a>
+<a href="#lists" class="shortcut">Lists</a>
+
+<h2 id="basics">Basics</h2>
+
 <code class="python">print</code>
 <p>Write to the screen</p>
 <pre><code class="python">print("hi")
@@ -82,7 +93,7 @@ elif (answer == "two"):
 else:
   print("wrong!")</code></pre>
 
-<br>
+<h2 id="functions">Functions</h2>
 
 <code class="python">functions</code>
 <p>a defined group of code that can be called multiple times and optionally with arguments and with a return value</p>
@@ -107,12 +118,134 @@ print("with an argument of the integer 5")
 returnValue = gimmeWahoos(5)
 print("gimmeWahoos returned to me the value:", returnValue)</code></pre>
 
+<h2 id="loops">Loops</h2>
+
+<code class="python">while loop</code>
+<p>repeat a "code body" (indented group of code) only while a condition is true</p>
+<p>this "while True" loop will repeat forever / until the program is stopped!</p>
+<pre><code class="python">while True:
+  print("Never stops looping!")
+  print("Press CTRL+C to STOP!")</code></pre>
 <br>
+<p>more examples:</p>
+<pre><code class="python">x = 0
+while (x < 10):
+  print(x) # will print: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+  x = x + 1</code></pre>
+<br>
+<pre><code class="python">answer = "wrong"
+while (answer != "right"):
+  answer = input("What is the answer: ")
+  if (answer == "stop"):
+    break # this gets us out of the loop early
+print("Yay you are right!")
+</code></pre>
+
+<br>
+
+<code class="python">for loop</code>
+<p>repeat a "code body" (indented group of code) a numeric amount of times</p>
+<pre><code class="python">for i in range(start, end, step):
+  # code body goes here, indented
+</code></pre>
+<br>
+<pre><code class="python">for i in range(10):
+  print(i) # will print (on new lines): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+</code></pre>
+<br>
+<pre><code class="python">for i in range(2, 5):
+  print(i) # will print: 2, 3, 4
+</code></pre>
+<br>
+<pre><code class="python">for i in range(1, 9, 2):
+  print(i) # will print: 1, 3, 5, 7
+</code></pre>
+
+<h2 id="lists">Lists</h2>
+
+<code class="python">list creation</code>
+<p>stores elements in a fixed order</p>
+<pre><code class="python">names = ["Scooby", "Shaggy", "Daphne", "Wilma"]</code></pre>
+
+<br>
+
+<code class="python">list length</code>
+<p>get the count of how many elements are in a list</p>
+<pre><code class="python">len(names) # is 4</code></pre>
+
+<br>
+
+<code class="python">list access</code>
+<p>access items in a list by index</p>
+<pre><code class="python">names[0] # is “Scooby”
+names[1] # is “Shaggy”
+names[len(names)-1] # is “Wilma”
+</code></pre>
+
+<br>
+
+<code class="python">loop over a list</code>
+<p>loop by index</p>
+<pre><code class="python">for i in range(len(names)):
+  print(i, names[i])
+</code></pre>
+<br>
+<p>loop by element</p>
+<pre><code>for name in names:
+  print(name)
+</code></pre>
+
+<br>
+
+<code class="python">list addition</code>
+<p>add items to a list with append</p>
+<pre><code class="python">names.append(“Fred”)
+print(names) # prints
+</code></pre>
+
+<br>
+
+<code class="python">list removal</code>
+<p>remove items from a list with pop</p>
+<pre><code class="python">removedName = names.pop(0) # pop takes an index, returns removed element
+print(removedName) # prints “Scooby”
+</code></pre>
+
+<br>
+
+<code class="python">string access and length</code>
+<p>the letters in a string can be accessed like a list (but strings are <i>immutable</i> like tuples)</p>
+<pre><code class="python">word = “Supercalifragilisticexpialidocious!”
+word[0] # is “S”
+word[len(word)-1] # is “!”
+print(len(word)) # prints 35
+</code></pre>
+
+<br>
+
+<code class="python">BONUS syntax: .split( )</code>
+<p>split a string of words into a list of words</p>
+<pre><code class="python">myList = "fee fi fo fum".split() # myList becomes ["fee", "fi", "fo", "fum"]</code></pre>
+
+<br>
+
+<code class="python">tuples</code>
+<p>similar to a list, but it can’t change (called an <i>immutable</i> list of elements)</p>
+<pre><code class="python">coordinates = (10, 12)
+print(coordinates[0]) # prints 10
+(x0, y0) = coordinates # this is a cool way to assign variables
+coordinates.append(15) # DOESN’T WORK, tuples are IMMUTABLE
+</code></pre>
+
+
+
 
 <!-- 
 <code class="python">word</code>
 <p>description</p>
 <pre><code class="python">examples</code></pre>
+
+<br>
 -->
       </div>
     </div>
@@ -121,6 +254,9 @@ print("gimmeWahoos returned to me the value:", returnValue)</code></pre>
   <div class="section-container">
   	<a href="/obama"><- Back</a>
   </div>
+
+  <script src="js/lib/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

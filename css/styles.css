@@ -170,6 +170,9 @@ code {
 .section-item.forty-percent-width {
 	width: 320px;
 }
+.section-item.eighty-percent-width {
+	width: 640px;
+}
 
 .section img.float-left {
 	float: left;
@@ -313,5 +316,16 @@ img.nav-bar-tk-logo {
 
 .obama-curriculum-section a,
 .obama-curriculum-section p {
+	margin-bottom: 0.5em;
+}
+
+/* SYNTAX GUIDE */
+
+.syntax-guide-section h2 {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.syntax-guide-section a {
 	margin-bottom: 0.5em;
 }

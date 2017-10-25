@@ -10,4 +10,13 @@ $(".about-us-button").click(function() {
   }, scrollTime);
 });
 
+$(".shortcut").click(function() {
+  console.log("#" + $(this).text().toLowerCase());
+  const id = $(this).text().toLowerCase();
+  const headingTop = $("#"+id)[0].offsetTop - 20;
 
+  const scrollTime = 1500;
+  $('html, body').animate({
+      scrollTop: headingTop
+  }, scrollTime);
+});
